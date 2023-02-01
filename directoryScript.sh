@@ -8,7 +8,7 @@ mkdir tests
 touch src/app.js
 echo 'node_modules' > .gitignore
 git add .
-git commit -m "chore: set up project"
+git commit -m "chore: set up repository"
 echo "const path = require('path');\n\nmodule.exports={\nconfig: path.join(__dirname, 'src/database/config/config.json'),\n'migrations-path': path.join(__dirname, 'src/database/migrations'),\n'seeders-path': path.join(__dirname, 'src/database/seeders'),\n'models-path': path.join(__dirname, 'src/database/models'),\n};" | cat > .sequelizerc
 npx sequelize init
 mkdir src/controllers
